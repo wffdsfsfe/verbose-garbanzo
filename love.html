@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .lock-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .lock-icon {
+            font-size: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #ccc;
+        }
+        
+        .lock-icon.unlocked {
+            color: #4CAF50;
+            transform: rotate(45deg);
+        }
+        
+        .hidden-content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .unlock-text {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="lock-container">
+        <div class="lock-icon" id="lockIcon">🔒</div>
+        <div class="unlock-text">点击锁图标解锁内容</div>
+        
+        <div class="hidden-content" id="hiddenContent">
+            <h2>解锁成功!</h2>
+            <p>宝宝 这里是我们专属的恋爱网站
+                <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的一周年倒数日</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #fff5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .anniversary-date {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .countdown-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        .countdown-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .memory-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        
+        .love-letter {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .love-letter:before {
+            content: "❤️";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            font-size: 30px;
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 100;
+        }
+        
+        .music-control {
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: #ff6b6b;
+            opacity: 0;
+            animation: float 6s linear forwards;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <!-- 漂浮的心形 -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+    
+    <div class="container">
+        <header>
+            <h1>我们的一周年倒数日</h1>
+            <div class="anniversary-date" id="anniversaryDate"></div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">天</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">小时</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">0</div>
+                    <div class="countdown-label">分钟</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">秒</div>
+                </div>
+            </div>
+        </header>
+        
+       
+        
+        <section class="love-letter">
+            <h2>给最爱的你</h2>
+            <p>亲爱的程依轩：</p >
+            <p>时间过得真快 转眼间我们已经一起走过了<span id="togetherDays">0</span>天 每一天因为有你的陪伴而变得特别</p >
+            <p>我们第一次认识的时候谁也没想到我们这么相爱</p >
+            <p>这些日子里感谢你给我带来的欢乐和惊喜</p >
+            <p>感谢你一直以来的包容和理解，感谢你让我的生活变得如此丰富多彩</p >
+            <p>未来的日子里 我希望能永远和你走下去 让你永远做我的小朋友</p >
+            <p>宝宝我爱你 永远 </p >
+            <p style="text-align: right; margin-top: 20px;">—— 爱你的我</p >
+        </section>
+    </div>
+    
+    
+    
+    <footer>
+        <p>刘兴and程依轩</p >
+    </footer>
+
+    <script>
+        // 设置纪念日日期 (格式: 年, 月-1, 日)
+        const anniversaryDate = new Date(2025, 3, 19); // 2023年6月20日
+        
+        // 更新纪念日显示
+        document.getElementById('anniversaryDate').textContent = 
+            `纪念日: ${anniversaryDate.getFullYear()}年${anniversaryDate.getMonth()+1}月${anniversaryDate.getDate()}日`;
+        
+        // 计算在一起的天数
+        function updateTogetherDays() {
+            const today = new Date();
+            const diffTime = today - anniversaryDate;
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            document.getElementById('togetherDays').textContent = diffDays;
+        }
+        
+        // 更新倒计时
+        function updateCountdown() {
+            const now = new Date();
+            const nextAnniversary = new Date(
+                now.getFullYear(),
+                anniversaryDate.getMonth(),
+                anniversaryDate.getDate()
+            );
+            
+            // 如果今年的纪念日已经过去，计算明年的
+            if (now > nextAnniversary) {
+                nextAnniversary.setFullYear(nextAnniversary.getFullYear() + 1);
+            }
+            
+            const diff = nextAnniversary - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+        
+       
+        
+        // 创建漂浮的心形
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            document.getElementById('heartsContainer').appendChild(heart);
+            
+            // 移除心形元素以避免内存泄漏
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        
+        // 初始化
+        updateTogetherDays();
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        
+        
+        
+        // 定期创建心形
+        setInterval(createHeart, 300);
+        
+        // 点击照片放大
+        document.querySelectorAll('.photo').forEach(photo => {
+            photo.addEventListener('click', function() {
+                this.classList.toggle('photo-zoom');
+            });
+        });
+    </script>
+</body>
+</html>
+            </p >
+        </div>
+    </div>
+
+    <script>
+        const lockIcon = document.getElementById('lockIcon');
+        const hiddenContent = document.getElementById('hiddenContent');
+        let isLocked = true;
+        
+        lockIcon.addEventListener('click', function() {
+            if (isLocked) {
+                this.textContent = '🔓';
+                this.classList.add('unlocked');
+                hiddenContent.style.display = 'block';
+                isLocked = false;
+            } else {
+                this.textContent = '🔒';
+                this.classList.remove('unlocked');
+                hiddenContent.style.display = 'none';
+                isLocked = true;
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        #dog-container {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            z-index: 1000;
+        }
+        
+        #dog {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        
+        /* 使用CSS绘制小狗 */
+        .dog-head {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: #FFC107;
+            border-radius: 50%;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .dog-ear-left {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            background: #FFA000;
+            border-radius: 50%;
+            top: 0;
+            left: 5px;
+            transform: rotate(-30deg);
+            z-index: -1;
+        }
+        
+        .dog-ear-right {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            background: #FFA000;
+            border-radius: 50%;
+            top: 0;
+            right: 5px;
+            transform: rotate(30deg);
+            z-index: -1;
+        }
+        
+        .dog-eye-left {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+            top: 30px;
+            left: 25px;
+        }
+        
+        .dog-eye-right {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+            top: 30px;
+            right: 25px;
+        }
+        
+        .dog-pupil-left {
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background: black;
+            border-radius: 50%;
+            top: 4px;
+            left: 4px;
+        }
+        
+        .dog-pupil-right {
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background: black;
+            border-radius: 50%;
+            top: 4px;
+            right: 4px;
+        }
+        
+        .dog-nose {
+            position: absolute;
+            width: 15px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+            top: 45px;
+            left: 42px;
+        }
+        
+        .dog-mouth {
+            position: absolute;
+            width: 30px;
+            height: 15px;
+            border-bottom: 3px solid black;
+            border-radius: 0 0 50% 50%;
+            top: 55px;
+            left: 35px;
+        }
+        
+        #dog-title {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            white-space: nowrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        #speech-bubble {
+            position: absolute;
+            bottom: 120px;
+            right: 20px;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            max-width: 200px;
+            display: none;
+        }
+        
+        #speech-bubble:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 30px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: white transparent;
+        }
+        
+        .hit {
+            animation: hit 0.3s;
+        }
+        
+        @keyframes hit {
+            0% { transform: translateX(0) rotate(0deg); }
+            25% { transform: translateX(-10px) rotate(-10deg); }
+            50% { transform: translateX(10px) rotate(10deg); }
+            75% { transform: translateX(-5px) rotate(-5deg); }
+            100% { transform: translateX(0) rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="dog-container">
+        <div id="dog-title">生气了就点我一下
+        </div>
+        <div id="dog">
+            <div class="dog-ear-left"></div>
+            <div class="dog-ear-right"></div>
+            <div class="dog-head"></div>
+            <div class="dog-eye-left"><div class="dog-pupil-left"></div></div>
+            <div class="dog-eye-right"><div class="dog-pupil-right"></div></div>
+            <div class="dog-nose"></div>
+            <div class="dog-mouth"></div>
+        </div>
+        <div id="speech-bubble">刘兴知道错了<br>原谅我吧</div>
+    </div>
+
+    <script>
+        const dogContainer = document.getElementById('dog-container');
+        const dog = document.getElementById('dog');
+        const speechBubble = document.getElementById('speech-bubble');
+        
+        dogContainer.addEventListener('click', function() {
+            // 添加被打动画
+            dogContainer.classList.add('hit');
+            
+            // 显示说话气泡
+            speechBubble.style.display = 'block';
+            
+            // 3秒后隐藏说话气泡
+            setTimeout(() => {
+                speechBubble.style.display = 'none';
+            }, 3000);
+            
+            // 动画结束后移除类
+            setTimeout(() => {
+                dogContainer.classList.remove('hit');
+            }, 300);
+        });
+        
+        // 小狗随机移动一点位置
+        function randomMove() {
+            const x = Math.random() * 20 - 10;
+            const y = Math.random() * 20 - 10;
+            dog.style.transform = `translate(${x}px, ${y}px)`;
+            
+            setTimeout(randomMove, 2000);
+        }
+        
+        // 启动随机移动
+        setTimeout(randomMove, 2000);
+    </script>
+</body>
+</html>
